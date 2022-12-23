@@ -1,0 +1,448 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contaner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/*hedar start*/
+header {
+    background-image: linear-gradient(rgb(221, 96, 74), rgb(168, 110, 43), rgba(110, 145, 28, 0.897), rgb(155, 80, 37));
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo img {
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 50%;
+
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 85px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    background-color: rgb(46, 33, 33);
+}
+
+/*hedar end*/
+/*..main/ banar section....*/
+.banar-section {
+    background-image: url(imeag/resturent.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-content h1 {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 0, 0.565);
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.banner-content p {
+    width: 300px;
+    margin: 15px auto;
+    background: rgba(252, 21, 5, 0.63);
+    color: white;
+    padding: 13px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: rgb(2, 88, 88);
+    color: aliceblue;
+    box-shadow: 6px 7px 10px rgb(73, 20, 20);
+    transition: 1s;
+}
+
+#btn:hover {
+    transform: scale(1.2);
+}
+
+/*end banner*/
+/*start about*/
+#about-us {
+    padding: 18px;
+}
+
+.about-us-content {
+    text-align: center;
+
+}
+
+.about-us-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+
+}
+
+.about-us-content p {
+    margin-bottom: 10px;
+
+}
+
+/*end of about us*/
+/*start food manu*/
+#menu-section {
+    padding: 1%;
+}
+
+.card-body {
+    text-align: center;
+    background-color: rgb(161, 157, 157);
+    border-radius: 12px;
+}
+
+.card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.itrm-des {
+    background-color: rgb(161, 157, 157);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.itrm-des p {
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 8px 16px rgb(75, 65, 65);
+}
+
+/*end food manu*/
+/* start contuct */
+#contact {
+    padding: 2%;
+    background: rgb(92, 64, 110);
+}
+
+.contact-detal {
+    color: white;
+    text-align: center;
+    padding: 27px 0;
+}
+
+.contact-detal p,
+address {
+    font-size: 0.7rem;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+}
+
+/*end contuct*/
+footer {
+    padding: 2%;
+    color: white;
+    background-color: #060967;
+}
+
+footer p {
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.sosal-mid {
+    text-align: center;
+}
+
+.sosal-mid a {
+    text-decoration: none;
+    margin: 8px;
+}
+
+.sosal-mid img {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    border-radius: 20px;
+    background: rgb(33, 23, 88);
+}
+
+.sosal-mid img:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 12px white;
+}
+
+@media (min-width: 576px) {
+    .col-sm-1 {
+        width: 8.35%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-1 {
+        width: 8.35%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .logo {
+        text-align: left;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        transition: .4s;
+    }
+
+    nav ul li a:hover {
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+
+    .banar-section {
+        position: relative;
+        height: 100vh;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner-content h1 {
+        width: 700px;
+        font-size: 3.5rem;
+    }
+
+    .banner-content p {
+        width: 500px;
+        font-size: 1.7rem;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    .sosal-mid img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .col-lg-1 {
+        width: 8.35%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
